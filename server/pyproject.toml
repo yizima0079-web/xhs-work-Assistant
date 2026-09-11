@@ -1,0 +1,44 @@
+[project]
+name = "datapp-server"
+version = "0.1.0"
+description = "datapp 采集管道后端（Milestone 2：采集闭环 + 审核分析 + 结构化报告）"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.115",
+    # 不用 [standard]：项目没有 WebSocket / HTTP2 / uvloop 需求，
+    # 少拉 websockets、uvloop（Windows 本来也装不上）等一批用不上的包。
+    # 开发热重载 uvicorn 自带 statreload，不依赖 watchfiles。
+    "uvicorn>=0.30",
+    "pydantic>=2.8",
+    "pydantic-settings>=2.4",
+    "pyyaml>=6.0",
+    "aiosqlite>=0.20",
+    "httpx>=0.27",
+    "python-multipart>=0.0.9",
+    "python-docx>=1.1",
+    "pypdf>=5.0",
+    "langchain-core>=1.6,<2",
+]
+
+[project.optional-dependencies]
+# MongoDB 后端**尚未实现**（repositories 只有 SQLite 实现，config.db_backend 是预留开关）。
+# 目前全仓只有 tools/mongodb_check.py 用到 pymongo，所以不进主依赖 —— 需要时：
+#   uv sync --extra mongodb && uv run python -m tools.mongodb_check
+mongodb = ["pymongo>=4.13"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]

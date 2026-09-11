@@ -1,0 +1,10 @@
+[
+  {
+    "id": "0123456789abcdef01234567",
+    "title": "视频笔记标题",
+    "type": "video",
+    "author": "视频作者",
+    "likes": "99",
+    "url": "https://www.xiaohongshu.com/explore/0123456789abcdef01234567?xsec_token=test"
+  }
+]

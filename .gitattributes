@@ -1,0 +1,30 @@
+# 行尾策略 —— 按类型钉死，不依赖各人本机的 core.autocrlf。
+#
+# 本机 core.autocrlf=true 时，git 会在**检出**时把所有它认作文本的文件写成 CRLF。
+# `gradlew` 没有扩展名、被认作文本，于是克隆下来就带 CRLF，Git Bash 里跑直接
+# `/usr/bin/env sh^M: bad interpreter`。反过来 Windows 原生批处理用 LF 又会出别的问题。
+# 所以两边都显式声明，谁 clone 都一样。
+
+* text=auto eol=lf
+
+# Windows 原生脚本：LF 会让 cmd 的标签解析出岔子
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# POSIX 脚本：必须 LF
+gradlew text eol=lf
+*.sh    text eol=lf
+
+# 以下几类不参与行尾转换（二进制），显式声明可避免 git 逐字节嗅探
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.webp    binary
+*.gif     binary
+*.ico     binary
+*.ttf     binary
+*.jar     binary
+*.keystore binary
+*.db      binary
+*.sqlite  binary

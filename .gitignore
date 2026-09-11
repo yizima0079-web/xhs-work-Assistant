@@ -1,0 +1,46 @@
+﻿# ================= IDE / OS =================
+*.iml
+.idea/
+.vscode/
+.claude/
+.learnings/
+.DS_Store
+local.properties
+
+# ================= Gradle / Android =================
+.gradle/
+.gradle-home/
+.gradle-user/
+.kotlin/
+build/
+captures/
+.cxx/
+.externalNativeBuild/
+app/debug.keystore
+
+# ================= Python =================
+__pycache__/
+*.pyc
+.venv/
+server/.env
+server/.env.*
+!server/.env.example
+server/.pytest*
+server/.tmp/
+.pytest_cache/
+
+# ================= Node =================
+node_modules/
+client/dist/
+*.tsbuildinfo
+
+# ================= 第三方采集工具（不入库） =================
+# OpenCLI 是外部项目（@jackwener/opencli），2596 个文件进来只会淹没本仓库的真实改动。
+# 需要采集时自行构建到 vendor/OpenCLI-1.8.8/dist/，
+# 再让 server/.env 的 DATAPP_OPENCLI_MAIN 指向产物（默认值就是这个路径）。
+vendor/
+
+# ================= 运行时数据（原始采集 / SQLite / 报告 / 媒体） =================
+storage/
+.tmp/
+.uv-cache/

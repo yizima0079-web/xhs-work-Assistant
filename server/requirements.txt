@@ -1,0 +1,32 @@
+# datapp server 运行时依赖（Python 3.14+）
+#
+# 版本 = 当前已验证可用环境（server/.venv）里实测的版本，用 == 锁死：
+# 发布/分发时**不打包依赖**，由使用者按本文件自行安装：
+#
+#   py -3.14 -m venv .venv
+#   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+#   .\.venv\Scripts\python.exe -m uvicorn app.main:app --port 8000
+#
+# 真源是 pyproject.toml（改依赖先改它）；本文件是给"不带依赖的分发包"用的安装清单。
+# 重新生成（联网环境）：
+#   uv export --format requirements-txt --no-hashes --no-dev -o requirements.txt
+# 上游装了新版想同步锁死，等价命令：
+#   uv sync && uv export --format requirements-txt --no-hashes --no-dev -o requirements.txt
+
+fastapi==0.141.1
+# 不带 [standard]：项目无 WebSocket / HTTP2 / uvloop 需求
+uvicorn==0.52.4
+pydantic==2.13.5
+pydantic-settings==2.15.0
+PyYAML==6.0.3
+aiosqlite==0.22.1
+httpx==0.28.1
+# 无直接 import，但 /kb/upload 的 UploadFile 由 Starlette 运行时要求，不能省
+python-multipart==0.0.32
+python-docx==1.2.0
+pypdf==6.18.0
+langchain-core==1.6.2
+
+# ---- 可选：MongoDB 只读副本相关的本地检查工具（后端尚未实现）----
+# 需要时取消注释，或直接：uv sync --extra mongodb
+# pymongo==4.18.0

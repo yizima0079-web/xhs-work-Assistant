@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1180" viewBox="0 0 1600 1180">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7fbff"/>
+      <stop offset="0.55" stop-color="#eef7fb"/>
+      <stop offset="1" stop-color="#f4f0ff"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf9ff"/>
+      <stop offset="1" stop-color="#eef0ff"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#67d9e8"/>
+      <stop offset="1" stop-color="#5e7af6"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9d7ff"/>
+      <stop offset="1" stop-color="#a8c7ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#6b88a6" flood-opacity="0.16"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#6b88a6" flood-opacity="0.12"/>
+    </filter>
+    <clipPath id="screen1"><rect x="150" y="190" width="340" height="710" rx="38"/></clipPath>
+    <clipPath id="screen2"><rect x="630" y="190" width="340" height="710" rx="38"/></clipPath>
+    <clipPath id="screen3"><rect x="1110" y="190" width="340" height="710" rx="38"/></clipPath>
+    <style>
+      .cn { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .num { font-family: Inter, "Arial", sans-serif; }
+      .title { fill: #182333; font-size: 25px; font-weight: 700; }
+      .body { fill: #182333; font-size: 14px; }
+      .muted { fill: #8292a6; font-size: 11px; }
+      .tiny { fill: #8292a6; font-size: 9px; }
+      .blueText { fill: #506bf1; font-size: 12px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1180" fill="url(#bg)"/>
+  <circle cx="90" cy="105" r="170" fill="#d9f4fa" opacity="0.58"/>
+  <circle cx="1510" cy="1010" r="230" fill="#e8e2ff" opacity="0.62"/>
+
+  <text x="92" y="75" class="cn" fill="#506bf1" font-size="13" font-weight="700" letter-spacing="3">DATAPP / USER APP</text>
+  <text x="92" y="120" class="cn" fill="#182333" font-size="34" font-weight="700">冷白小清新 · iOS 原生感视觉稿</text>
+  <text x="94" y="151" class="cn" fill="#8292a6" font-size="15">用户端数据洞察入口｜轻量卡片｜低噪信息层级｜适配 Android Compose</text>
+  <g transform="translate(1240 92)">
+    <rect width="264" height="42" rx="21" fill="#ffffff" opacity="0.82" stroke="#dbe7f0"/>
+    <circle cx="22" cy="21" r="6" fill="#5bd7d3"/>
+    <text x="40" y="26" class="cn" fill="#62748b" font-size="12">STYLE DRAFT / V1 · 2026.09</text>
+  </g>
+
+  <!-- Phone 1 -->
+  <g filter="url(#shadow)">
+    <rect x="135" y="175" width="370" height="750" rx="48" fill="#172335"/>
+    <rect x="145" y="185" width="350" height="730" rx="40" fill="#f9fcff"/>
+    <rect x="255" y="195" width="130" height="25" rx="13" fill="#172335"/>
+  </g>
+  <g clip-path="url(#screen1)">
+    <rect x="145" y="185" width="350" height="730" fill="#f9fcff"/>
+    <rect x="145" y="185" width="350" height="220" fill="url(#hero)"/>
+    <circle cx="443" cy="258" r="84" fill="#d8f6f8" opacity="0.68"/>
+    <circle cx="452" cy="245" r="47" fill="#edf0ff" opacity="0.9"/>
+    <text x="171" y="247" class="cn" fill="#8190a4" font-size="11">周三 · 9月9日</text>
+    <text x="171" y="279" class="cn" fill="#182333" font-size="22" font-weight="700">早上好，Yizima</text>
+    <text x="171" y="304" class="cn" fill="#71829a" font-size="12">今天也来看看你的内容风向</text>
+    <g transform="translate(171 334)">
+      <rect width="298" height="118" rx="22" fill="#ffffff" opacity="0.9" stroke="#e1ebf3"/>
+      <text x="18" y="26" class="cn muted">本周洞察</text>
+      <text x="18" y="65" class="num" fill="#506bf1" font-size="32" font-weight="700">78</text>
+      <text x="69" y="63" class="cn" fill="#506bf1" font-size="12">条有效内容</text>
+      <rect x="18" y="81" width="150" height="7" rx="4" fill="#e8edf7"/>
+      <rect x="18" y="81" width="111" height="7" rx="4" fill="url(#blue)"/>
+      <text x="188" y="87" class="cn tiny">较上周 +18%</text>
+      <circle cx="256" cy="45" r="27" fill="#f0f8ff"/>
+      <path d="M244 47l8 8 16-19" fill="none" stroke="#5bd7d3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="171" y="491" class="cn title" font-size="17">今日推荐</text>
+    <text x="422" y="491" class="cn blueText">查看全部</text>
+    <g transform="translate(171 510)">
+      <rect width="298" height="155" rx="20" fill="#ffffff" stroke="#e3edf4" filter="url(#smallShadow)"/>
+      <rect x="16" y="16" width="50" height="50" rx="16" fill="url(#violet)"/>
+      <path d="M31 45c4-14 14-20 20-20 7 0 10 7 10 12-10-2-16 3-21 12z" fill="#ffffff" opacity="0.9"/>
+      <text x="80" y="34" class="cn" fill="#182333" font-size="14" font-weight="700">生活方式内容正在升温</text>
+      <text x="80" y="56" class="cn muted">小红书 · 趋势摘要</text>
+      <text x="16" y="93" class="cn" fill="#55667c" font-size="12">低饱和、轻运动和松弛感表达，</text>
+      <text x="16" y="114" class="cn" fill="#55667c" font-size="12">成为本周年轻用户高频讨论主题。</text>
+      <rect x="16" y="130" width="66" height="16" rx="8" fill="#eef5ff"/>
+      <text x="28" y="142" class="cn" fill="#6880d9" font-size="9">趋势上升</text>
+      <text x="250" y="142" class="num" fill="#95a3b5" font-size="10">08:42</text>
+    </g>
+    <g transform="translate(171 689)">
+      <rect width="142" height="106" rx="18" fill="#ffffff" stroke="#e3edf4"/>
+      <text x="15" y="27" class="cn muted">待复核内容</text>
+      <text x="15" y="68" class="num" fill="#182333" font-size="28" font-weight="700">12</text>
+      <circle cx="111" cy="61" r="18" fill="#fff3df"/>
+      <path d="M111 51v11l7 5" fill="none" stroke="#f2ac63" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(327 689)">
+      <rect width="142" height="106" rx="18" fill="#ffffff" stroke="#e3edf4"/>
+      <text x="15" y="27" class="cn muted">已收藏报告</text>
+      <text x="15" y="68" class="num" fill="#182333" font-size="28" font-weight="700">06</text>
+      <circle cx="111" cy="61" r="18" fill="#edf9f5"/>
+      <path d="M111 50l4 8 9 1-7 6 2 9-8-4-8 4 2-9-7-6 9-1z" fill="#5bd7d3"/>
+    </g>
+    <rect x="145" y="840" width="350" height="75" fill="#ffffff" opacity="0.96"/>
+    <path d="M145 840h350" stroke="#edf1f5"/>
+    <g class="cn" font-size="10" text-anchor="middle">
+      <circle cx="201" cy="867" r="17" fill="#edf2ff"/><path d="M193 868l8-8 8 8v10h-16z" fill="#506bf1"/>
+      <text x="201" y="898" fill="#506bf1">首页</text>
+      <circle cx="284" cy="867" r="17" fill="#f5f7fb"/><path d="M277 874l14-14M278 862h14v14" fill="none" stroke="#9aa8ba" stroke-width="2"/>
+      <text x="284" y="898" fill="#9aa8ba">洞察</text>
+      <circle cx="367" cy="867" r="17" fill="#f5f7fb"/><path d="M359 863h16v12h-16zM362 859h10" fill="none" stroke="#9aa8ba" stroke-width="2"/>
+      <text x="367" y="898" fill="#9aa8ba">报告</text>
+      <circle cx="450" cy="867" r="17" fill="#f5f7fb"/><circle cx="450" cy="864" r="5" fill="none" stroke="#9aa8ba" stroke-width="2"/><path d="M440 879c3-7 17-7 20 0" fill="none" stroke="#9aa8ba" stroke-width="2"/>
+      <text x="450" y="898" fill="#9aa8ba">我的</text>
+    </g>
+  </g>
+
+  <!-- Phone 2 -->
+  <g filter="url(#shadow)">
+    <rect x="615" y="175" width="370" height="750" rx="48" fill="#172335"/>
+    <rect x="625" y="185" width="350" height="730" rx="40" fill="#f9fcff"/>
+    <rect x="735" y="195" width="130" height="25" rx="13" fill="#172335"/>
+  </g>
+  <g clip-path="url(#screen2)">
+    <rect x="625" y="185" width="350" height="730" fill="#f9fcff"/>
+    <text x="651" y="260" class="cn title">内容洞察</text>
+    <text x="651" y="285" class="cn muted">从数据里找到真正有用的方向</text>
+    <rect x="651" y="314" width="298" height="43" rx="15" fill="#ffffff" stroke="#e1ebf3"/>
+    <circle cx="675" cy="335" r="8" fill="none" stroke="#97a8bb" stroke-width="2"/><path d="M681 341l7 7" stroke="#97a8bb" stroke-width="2" stroke-linecap="round"/>
+    <text x="698" y="340" class="cn muted">搜索关键词、账号或主题</text>
+    <text x="651" y="401" class="cn" fill="#182333" font-size="17" font-weight="700">本周趋势</text>
+    <text x="890" y="401" class="cn blueText">近 7 天⌄</text>
+    <g transform="translate(651 420)">
+      <rect width="298" height="216" rx="22" fill="#ffffff" stroke="#e3edf4" filter="url(#smallShadow)"/>
+      <text x="18" y="30" class="cn muted">讨论热度</text>
+      <text x="18" y="67" class="num" fill="#182333" font-size="28" font-weight="700">+32.8%</text>
+      <rect x="18" y="91" width="260" height="1" fill="#edf1f5"/>
+      <path d="M22 167 C44 157 52 172 69 150 S92 157 110 135 S133 143 150 118 S172 132 190 100 S219 112 237 76 S260 91 278 52" fill="none" stroke="url(#blue)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M22 167 C44 157 52 172 69 150 S92 157 110 135 S133 143 150 118 S172 132 190 100 S219 112 237 76 S260 91 278 52 L278 180 L22 180Z" fill="#e5f8fb" opacity="0.68"/>
+      <g class="num tiny"><text x="18" y="201">9/3</text><text x="77" y="201">9/5</text><text x="136" y="201">9/7</text><text x="195" y="201">9/9</text><text x="254" y="201">今天</text></g>
+    </g>
+    <text x="651" y="680" class="cn" fill="#182333" font-size="17" font-weight="700">热门主题</text>
+    <g transform="translate(651 699)">
+      <rect width="138" height="82" rx="18" fill="#eef8ff"/>
+      <text x="15" y="29" class="cn" fill="#4d71d9" font-size="12" font-weight="600">松弛感生活</text>
+      <text x="15" y="57" class="num" fill="#182333" font-size="20" font-weight="700">1,284</text><text x="71" y="57" class="cn tiny">条讨论</text>
+    </g>
+    <g transform="translate(811 699)">
+      <rect width="138" height="82" rx="18" fill="#f2f0ff"/>
+      <text x="15" y="29" class="cn" fill="#7367d4" font-size="12" font-weight="600">轻运动</text>
+      <text x="15" y="57" class="num" fill="#182333" font-size="20" font-weight="700">896</text><text x="65" y="57" class="cn tiny">条讨论</text>
+    </g>
+    <g transform="translate(651 800)">
+      <rect width="298" height="65" rx="18" fill="#ffffff" stroke="#e3edf4"/>
+      <circle cx="34" cy="32" r="18" fill="#e9fbf7"/><path d="M28 39l6-13 6 13-6-3z" fill="#52cbbf"/>
+      <text x="66" y="29" class="cn" fill="#182333" font-size="13" font-weight="600">还有 4 个上升主题</text>
+      <text x="66" y="48" class="cn muted">点击查看完整趋势报告</text>
+      <path d="M922 826l8 7-8 7" fill="none" stroke="#9babc0" stroke-width="2"/>
+    </g>
+    <rect x="625" y="840" width="350" height="75" fill="#ffffff" opacity="0.96"/>
+    <path d="M625 840h350" stroke="#edf1f5"/>
+    <g class="cn" font-size="10" text-anchor="middle">
+      <circle cx="681" cy="867" r="17" fill="#f5f7fb"/><path d="M673 868l8-8 8 8v10h-16z" fill="#9aa8ba"/><text x="681" y="898" fill="#9aa8ba">首页</text>
+      <circle cx="764" cy="867" r="17" fill="#edf2ff"/><path d="M757 874l14-14M758 862h14v14" fill="none" stroke="#506bf1" stroke-width="2"/><text x="764" y="898" fill="#506bf1">洞察</text>
+      <circle cx="847" cy="867" r="17" fill="#f5f7fb"/><path d="M839 863h16v12h-16zM842 859h10" fill="none" stroke="#9aa8ba" stroke-width="2"/><text x="847" y="898" fill="#9aa8ba">报告</text>
+      <circle cx="930" cy="867" r="17" fill="#f5f7fb"/><circle cx="930" cy="864" r="5" fill="none" stroke="#9aa8ba" stroke-width="2"/><path d="M920 879c3-7 17-7 20 0" fill="none" stroke="#9aa8ba" stroke-width="2"/><text x="930" y="898" fill="#9aa8ba">我的</text>
+    </g>
+  </g>
+
+  <!-- Phone 3 -->
+  <g filter="url(#shadow)">
+    <rect x="1095" y="175" width="370" height="750" rx="48" fill="#172335"/>
+    <rect x="1105" y="185" width="350" height="730" rx="40" fill="#f9fcff"/>
+    <rect x="1215" y="195" width="130" height="25" rx="13" fill="#172335"/>
+  </g>
+  <g clip-path="url(#screen3)">
+    <rect x="1105" y="185" width="350" height="730" fill="#f9fcff"/>
+    <path d="M1105 185h350v125c-88 22-185 18-350-5z" fill="url(#hero)"/>
+    <path d="M1131 248l-12-12M1145 235l-4-17M1160 230l5-18" stroke="#d2eaf5" stroke-width="3" stroke-linecap="round"/>
+    <text x="1131" y="277" class="cn title">趋势报告</text>
+    <text x="1131" y="301" class="cn muted">生活方式内容 · 2026.09.03 — 09.09</text>
+    <g transform="translate(1131 335)">
+      <rect width="298" height="118" rx="22" fill="#ffffff" stroke="#e3edf4" filter="url(#smallShadow)"/>
+      <text x="18" y="29" class="cn muted">一句话总结</text>
+      <text x="18" y="60" class="cn" fill="#182333" font-size="15" font-weight="700">年轻用户正在追求“轻一点”的生活</text>
+      <text x="18" y="84" class="cn" fill="#55667c" font-size="12">表达、节奏与消费选择都更偏向低负担。</text>
+      <rect x="18" y="96" width="59" height="5" rx="3" fill="#67d9e8"/><rect x="82" y="96" width="38" height="5" rx="3" fill="#a8c7ff"/><rect x="125" y="96" width="25" height="5" rx="3" fill="#d9d7ff"/>
+    </g>
+    <text x="1131" y="492" class="cn" fill="#182333" font-size="17" font-weight="700">关键发现</text>
+    <g transform="translate(1131 512)">
+      <rect width="298" height="76" rx="18" fill="#ffffff" stroke="#e3edf4"/>
+      <circle cx="33" cy="38" r="18" fill="#eaf9ff"/><text x="33" y="44" text-anchor="middle" class="num" fill="#5987e9" font-size="16" font-weight="700">01</text>
+      <text x="66" y="32" class="cn" fill="#182333" font-size="13" font-weight="600">“松弛感”相关内容增长 32.8%</text>
+      <text x="66" y="53" class="cn muted">主要由日常记录与轻运动内容带动</text>
+    </g>
+    <g transform="translate(1131 601)">
+      <rect width="298" height="76" rx="18" fill="#ffffff" stroke="#e3edf4"/>
+      <circle cx="33" cy="38" r="18" fill="#f2f0ff"/><text x="33" y="44" text-anchor="middle" class="num" fill="#7d73d8" font-size="16" font-weight="700">02</text>
+      <text x="66" y="32" class="cn" fill="#182333" font-size="13" font-weight="600">低饱和视觉获得更多收藏</text>
+      <text x="66" y="53" class="cn muted">收藏率较平均水平高出 18%</text>
+    </g>
+    <g transform="translate(1131 690)">
+      <rect width="298" height="76" rx="18" fill="#ffffff" stroke="#e3edf4"/>
+      <circle cx="33" cy="38" r="18" fill="#e9fbf7"/><text x="33" y="44" text-anchor="middle" class="num" fill="#42b7aa" font-size="16" font-weight="700">03</text>
+      <text x="66" y="32" class="cn" fill="#182333" font-size="13" font-weight="600">短标题 + 真实场景更容易被读完</text>
+      <text x="66" y="53" class="cn muted">完读率提升约 14%</text>
+    </g>
+    <rect x="1131" y="800" width="298" height="44" rx="15" fill="#506bf1"/>
+    <text x="1280" y="828" text-anchor="middle" class="cn" fill="#ffffff" font-size="13" font-weight="600">收藏这份报告</text>
+    <rect x="1105" y="840" width="350" height="75" fill="#ffffff" opacity="0.96"/>
+    <path d="M1105 840h350" stroke="#edf1f5"/>
+    <g class="cn" font-size="10" text-anchor="middle">
+      <circle cx="1161" cy="867" r="17" fill="#f5f7fb"/><path d="M1153 868l8-8 8 8v10h-16z" fill="#9aa8ba"/><text x="1161" y="898" fill="#9aa8ba">首页</text>
+      <circle cx="1244" cy="867" r="17" fill="#f5f7fb"/><path d="M1237 874l14-14M1238 862h14v14" fill="none" stroke="#9aa8ba" stroke-width="2"/><text x="1244" y="898" fill="#9aa8ba">洞察</text>
+      <circle cx="1327" cy="867" r="17" fill="#edf2ff"/><path d="M1319 863h16v12h-16zM1322 859h10" fill="none" stroke="#506bf1" stroke-width="2"/><text x="1327" y="898" fill="#506bf1">报告</text>
+      <circle cx="1410" cy="867" r="17" fill="#f5f7fb"/><circle cx="1410" cy="864" r="5" fill="none" stroke="#9aa8ba" stroke-width="2"/><path d="M1400 879c3-7 17-7 20 0" fill="none" stroke="#9aa8ba" stroke-width="2"/><text x="1410" y="898" fill="#9aa8ba">我的</text>
+    </g>
+  </g>
+
+  <text x="800" y="1010" text-anchor="middle" class="cn" fill="#182333" font-size="18" font-weight="700">视觉关键词</text>
+  <g transform="translate(420 1040)">
+    <rect width="152" height="38" rx="19" fill="#ffffff" stroke="#dcebf2"/><circle cx="22" cy="19" r="7" fill="#f9fcff" stroke="#9fb2c4"/><text x="40" y="24" class="cn" fill="#63758b" font-size="12">冷白底色</text>
+    <rect x="170" width="152" height="38" rx="19" fill="#ffffff" stroke="#dcebf2"/><circle cx="192" cy="19" r="7" fill="#67d9e8"/><text x="210" y="24" class="cn" fill="#63758b" font-size="12">青蓝强调</text>
+    <rect x="340" width="152" height="38" rx="19" fill="#ffffff" stroke="#dcebf2"/><circle cx="362" cy="19" r="7" fill="#d9d7ff"/><text x="380" y="24" class="cn" fill="#63758b" font-size="12">柔和渐变</text>
+    <rect x="510" width="152" height="38" rx="19" fill="#ffffff" stroke="#dcebf2"/><circle cx="532" cy="19" r="7" fill="#ffffff" stroke="#dce3eb"/><text x="550" y="24" class="cn" fill="#63758b" font-size="12">原生卡片</text>
+  </g>
+  <text x="800" y="1125" text-anchor="middle" class="cn" fill="#9aa8b8" font-size="12">第一版建议先确认：整体气质 → 信息密度 → 主色倾向 → 再进入 Compose 实现</text>
+</svg>

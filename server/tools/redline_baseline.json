@@ -1,0 +1,16 @@
+{
+  "captured_at": "2026-09-10",
+  "note": "门禁上线前入库的存量越线文档。已向量化，但检索视图（iter_retrievable_chunks）将它们物理隔离 —— 体检的行为层逐条验证「可检索命中数为 0」。用户拍板保留待复核，不删数据。此文件只登记存量；新增越线一律 FAIL。",
+  "captured_how": "iter_retrievable_chunks 的补集：有向量的 doc 减去可检索的 doc",
+  "known_violations": [
+    "2f58caafdd034fd3ad846cd7df18875d",
+    "45c8287cba4344dbadfb7c2a60a91343",
+    "4f3ce153f54d4c1eb648306d5ea7b015",
+    "68fc0599952e4575b3ca24714ceed935",
+    "959dd73edffc4772bdfce731fe8b0f4d",
+    "96948948581e499f99ff44626266f58d",
+    "ba2cd651d3f5408b8ce36e743a197c75",
+    "bf63179874684190bc7a517ef6bc654e",
+    "fe83a69d08de4f3e84eaaec4ee704c9c"
+  ]
+}

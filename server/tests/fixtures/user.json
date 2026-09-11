@@ -1,0 +1,10 @@
+[
+  {
+    "id": "0123456789abcdef01234567",
+    "title": "用户笔记标题",
+    "type": "normal",
+    "likes": "50",
+    "url": "https://www.xiaohongshu.com/explore/0123456789abcdef01234567?xsec_token=test",
+    "cover": "http://sns-webpic-qc.xhscdn.com/cover-test.webp"
+  }
+]

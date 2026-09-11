@@ -1,0 +1,12 @@
+[
+  {
+    "rank": 1,
+    "author": "评论者甲",
+    "userId": "u1",
+    "profileUrl": "https://www.xiaohongshu.com/user/profile/u1",
+    "text": "写得好，学到了",
+    "likes": 10,
+    "time": "2026-09-02",
+    "is_reply": false
+  }
+]
